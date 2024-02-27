@@ -1,0 +1,37 @@
+@use '../index.scss' as *;
+
+.header {
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+
+  .top-ribbon{
+    display: flex;
+    height: 50%;
+    gap: 10px;
+    align-items: center;
+    padding-left: 2%;
+
+    .pink, .brownish, .green{
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+    }
+    .pink{
+      background-color: $pink;
+    }
+    .brownish{
+      background-color: $brownish;
+    }
+    .green{
+      background-color: $green;
+    }
+  }
+  h1.name{
+    display: inline-block;
+    font-family: $cascadia;
+    font-size: small;
+    font-weight: normal;
+    opacity: 0.7;
+  }
+}

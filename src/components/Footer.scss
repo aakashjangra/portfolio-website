@@ -1,0 +1,38 @@
+@use '../index.scss' as *;
+
+.footer{
+  height: 7%;
+  display: flex;
+  align-items: center;
+
+  h2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    padding: 0 1rem;
+    border-right: 2px solid $dark;
+  }
+
+  .contact-methods{
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    font-size: small;
+    
+    .contact-method{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: large;
+      border-right: 2px solid $dark;
+
+      cursor: pointer;
+
+      &:hover{
+        color: $brownish;
+      }
+    }
+  }  
+}
