@@ -10,7 +10,7 @@ const Contacts = () => {
         If you have an idea for a website, then I'm waiting for your message.
       </p>
       <div className="contact-methods">
-        <ContactMethod />
+        <ContactMethod name={'email'} username={'aj.akashjangra@gmail.com'} link={'mailto:aj.akashjangra@gmail.com'} />
       </div>
     </div>
   )
