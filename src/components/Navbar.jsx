@@ -1,49 +1,54 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => {
 
   const navigate = useNavigate();
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setCurrentPage(path);
+  }, [])
 
   return (
     <ul className='navbar'>
       <li
-        className={`${currentPage === 'home' ? 'active' : ''}`}
+        className={`${currentPage === '/' ? 'active' : ''}`}
         onClick={() => {
-          setCurrentPage('home');
+          setCurrentPage('/');
           navigate('/');
         }}
       >
         _hello
       </li>
       <li
-        className={`${currentPage === 'about' ? 'active' : ''}`}
+        className={`${currentPage === '/about' ? 'active' : ''}`}
         onClick={() => {
-          setCurrentPage('about');
+          setCurrentPage('/about');
           navigate('/about')
         }}>_about_me</li>
       <li
-        className={`${currentPage === 'skills' ? 'active' : ''}`}
+        className={`${currentPage === '/skills' ? 'active' : ''}`}
         onClick={() => {
-          setCurrentPage('skills'); navigate('/skills')
+          setCurrentPage('/skills'); navigate('/skills')
         }}
       >
         _skills
       </li>
       <li
-        className={`${currentPage === 'projects' ? 'active' : ''}`}
+        className={`${currentPage === '/projects' ? 'active' : ''}`}
         onClick={() => {
-          setCurrentPage('projects'); navigate('/projects')
+          setCurrentPage('/projects'); navigate('/projects')
         }}
       >
         _projects
       </li>
       <li
-        className={`${currentPage === 'contacts' ? 'active' : ''}`}
+        className={`${currentPage === '/contacts' ? 'active' : ''}`}
         onClick={() => {
-          setCurrentPage('contacts'); navigate('/contacts')
+          setCurrentPage('/contacts'); navigate('/contacts')
         }}
       >
         _contacts

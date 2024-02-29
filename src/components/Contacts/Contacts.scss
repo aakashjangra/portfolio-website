@@ -1,0 +1,18 @@
+@use '../../index.scss' as *;
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: $cascadia;
+
+  h2{
+    font-size: 3rem;
+    color: $green;
+    text-transform: uppercase;
+  }
+
+  
+}
