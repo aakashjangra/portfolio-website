@@ -11,6 +11,9 @@ const Contacts = () => {
       </p>
       <div className="contact-methods">
         <ContactMethod name={'email'} username={'aj.akashjangra@gmail.com'} link={'mailto:aj.akashjangra@gmail.com'} />
+        <ContactMethod name={'linkedin'} username={'@akashjangra1'} link={'https://www.linkedin.com/in/akashjangra1/'} />
+        <ContactMethod name={'gitHub'} username={'@akashjangra2002'} link={'https://github.com/akashjangra2002'} />
+        <ContactMethod name={'discord'} username={'@skyxsaitama'} />
       </div>
     </div>
   )

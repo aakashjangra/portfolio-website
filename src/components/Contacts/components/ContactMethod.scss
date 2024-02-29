@@ -1,10 +1,11 @@
 @use '../../../index.scss' as *;
 
-.contact-method{
-  $link-width: 5rem;
+.contact-method-container{
+  $link-width: 7rem;
 
+  width: 100%;
   display: flex;
-  gap: 7rem;
+  justify-content: space-between;
   border: 1px dashed $violet;
   padding: 1rem;
 
@@ -13,7 +14,6 @@
   }
 
   div.container{
-
     position: relative;
     width: $link-width;
     overflow: hidden;
@@ -36,8 +36,7 @@
 
       .link{
         padding: 1rem;
-        // color: $violet;
-        // background-color: $green;
+        color: $green;
       }
     }
   }
