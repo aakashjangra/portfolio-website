@@ -27,6 +27,7 @@
 
     &.active{
       color: $brownish;
+      background-color: $dark;
       padding-top: 0;
       border-top: $border-size solid $pink;
     }
