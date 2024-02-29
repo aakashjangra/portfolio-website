@@ -1,0 +1,46 @@
+import React from 'react'
+import './Projects.scss'
+import Project from './Project/Project'
+
+const Projects = () => {
+  const PROJECTS = [
+    {
+      name: 'op-resume-builder',
+      imgURL: '/preview-op-resume-builder.png',
+      description: 'User-friendly, easy-to-use one page resume builder.',
+      skills: ['ReactJS', 'Redux', 'TailwindCSS'],
+      gitHubURL: 'https://github.com/Sweet-Combat/op-resume-builder',
+      liveURL: 'https://op-resume-builder.netlify.app/'
+    }, {
+      name: 'GymTools',
+      imgURL: '/preview-gymtools.png',
+      description: 'GymTools is an e-commerce website.',
+      skills: ['NextJS', 'Redux', 'firebase'],
+      gitHubURL: 'https://github.com/aakashjangra/GymTools',
+      liveURL: 'https://gymtools.vercel.app/'
+    },
+  ]
+  return (
+    <div className='projects main-content'>
+      <h2 className='title'>
+        {'//TOP PROJECTS'}
+      </h2>
+      <div className="projects-container">
+        {
+          PROJECTS.map(project =>
+            <Project
+              projectName={project.name}
+              imgURL={project.imgURL}
+              description={project.description}
+              skills={project.skills}
+              gitHubURL={project.gitHubURL}
+              liveURL={project.liveURL}
+            />
+          )
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Projects

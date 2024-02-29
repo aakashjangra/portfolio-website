@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from './components/HomePage';
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import About from './components/About';
 import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
@@ -15,38 +15,38 @@ const router = createBrowserRouter(
   [
     {
       path: '/',
-      element: 
-      <>
-        <Header />
-        <HomePage />
-      </>
+      element:
+        <>
+          <Header />
+          <HomePage />
+        </>
       ,
-    }, 
+    },
     {
       path: '/about',
-      element: 
-      <>
-        <Header />
-        <About />
-      </>
+      element:
+        <>
+          <Header />
+          <About />
+        </>
       ,
-    }, 
+    },
     {
       path: '/skills',
-      element: 
-      <>
-        <Header />
-        <Skills />
-      </>,
-    }, 
+      element:
+        <>
+          <Header />
+          <Skills />
+        </>,
+    },
     {
       path: '/projects',
-      element: 
-      <>
-        <Header />
-        <Projects />
-      </>,
-    }, 
+      element:
+        <>
+          <Header />
+          <Projects />
+        </>,
+    },
     {
       path: '/contacts',
       element: <>
