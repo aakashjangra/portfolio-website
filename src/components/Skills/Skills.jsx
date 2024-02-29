@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './Skills.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronRight, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faFile } from '@fortawesome/free-regular-svg-icons'
 import Skill from './Skill/Skill'
 
 const Skills = () => {
-  const [showHardSkills, setShowHardSkills] = useState(false);
+  const [showHardSkills, setShowHardSkills] = useState(true); //by default open
 
   const HARD_SKILLS = [
     {
