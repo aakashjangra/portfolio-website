@@ -1,0 +1,61 @@
+@use '../../index.scss' as *;
+
+.skills-page{
+  $sidebar-width: 25%;
+  
+  display: flex;
+
+  .sidebar{
+    width: $sidebar-width;
+    padding: 1rem;
+    background-color: rgba($color: $white, $alpha: 0.1);
+
+    .particular-skills{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        .icon-container{
+          width: 1rem;
+        }
+
+        h3{
+          display: flex;
+          margin-top: 5px;
+          gap: 3px;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+      ul{
+        padding-left: 3rem;
+        padding-top: 0.5rem;
+        list-style-type: none;
+
+        li{
+          display: flex;
+          gap: 3px;
+          font-size: 0.8rem;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+  .skills-container{
+    font-family: $cascadia;
+
+    width: calc(100% - $sidebar-width);
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 3rem;
+  }
+}
