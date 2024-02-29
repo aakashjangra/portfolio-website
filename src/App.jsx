@@ -8,7 +8,7 @@ import {
 import HomePage from './components/HomePage';
 import Projects from './components/Projects';
 import About from './components/About';
-import Skills from './components/Skills';
+import Skills from './components/Skills/Skills';
 import Contacts from './components/Contacts/Contacts';
 
 const router = createBrowserRouter(

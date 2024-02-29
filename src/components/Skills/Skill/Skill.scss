@@ -1,0 +1,28 @@
+@use '../../../index.scss' as *;
+
+.single-skill{
+  $space: 2px;
+  
+  .name{
+    font-size: small;
+    font-weight: 400;
+    padding: $space 0;
+  }
+
+  .level-bar{
+
+    width: max-content;
+    display: flex;
+    gap: $space;
+    background-color: rgba($color: $white, $alpha: 0.1);
+
+    .indicator{
+      height: 1rem;
+      width: 1rem;
+
+      &.active{
+        background-color: $brownish;
+      }
+    }
+  }
+}
