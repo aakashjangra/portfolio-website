@@ -1,0 +1,55 @@
+@use '../../../index.scss' as *;
+
+.contact-method{
+  $link-width: 5rem;
+
+  display: flex;
+  gap: 7rem;
+  border: 1px dashed $violet;
+  padding: 1rem;
+
+  .name{
+    color: $brownish;
+  }
+
+  div.container{
+
+    position: relative;
+    width: $link-width;
+    overflow: hidden;
+
+    .default{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transition: left 1s ease-out;
+    }
+
+    .onHover{
+      
+      position: absolute;
+      top: 0;
+      left: $link-width;
+
+      transition: left 1s ease-in;
+
+      .link{
+        padding: 1rem;
+        // color: $violet;
+        // background-color: $green;
+      }
+    }
+  }
+
+  &:hover{
+    div.container{
+      .default{
+        left: $link-width; 
+      }
+      .onHover{
+        left: 0;
+      }
+    }
+  }
+}
