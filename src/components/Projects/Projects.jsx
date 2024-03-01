@@ -1,6 +1,7 @@
 import React from 'react'
 import './Projects.scss'
 import Project from './Project/Project'
+import { ThermometerSimple } from '@phosphor-icons/react'
 
 const Projects = () => {
   const PROJECTS = [
@@ -19,12 +20,24 @@ const Projects = () => {
       gitHubURL: 'https://github.com/aakashjangra/GymTools',
       liveURL: 'https://gymtools.vercel.app/'
     },
+    //  {
+    //   name: 'GymTools',
+    //   imgURL: '/preview-gymtools.png',
+    //   description: 'GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.',
+    //   skills: ['NextJS', 'Redux', 'firebase'],
+    //   gitHubURL: 'https://github.com/aakashjangra/GymTools',
+    //   liveURL: 'https://gymtools.vercel.app/'
+    // },
   ]
+
   return (
     <div className='projects main-content'>
-      <h2 className='title'>
-        {'//TOP PROJECTS'}
-      </h2>
+      <div className='header'>
+        <h2 className='title'>
+          {'//TOP PROJECTS'}
+        </h2>
+        <p className='note'>{'Swipe for more ->'}</p>
+      </div>
       <div className="projects-container">
         {
           PROJECTS.map(project =>
