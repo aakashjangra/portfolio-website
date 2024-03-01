@@ -1,0 +1,25 @@
+@use '../index.scss' as *;
+
+ul.numberline.indices {
+      list-style-type: none;
+
+      li {
+        color: rgba($color: $white, $alpha: 0.5);
+        line-height: 1.5;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        height: 20px;
+        background-color: rgba($color: $white, $alpha: 0.5);
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
