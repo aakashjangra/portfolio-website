@@ -6,21 +6,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5rem;
+  padding: 1rem 4rem;
 
-  .title{
-    color: $green;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      color: $green;
+    }
   }
 
-  .projects-container{
-    max-height: 90%;
+  .projects-container {
+    $grey: rgba($color: $white, $alpha: 0.2);
+
+    height: 100%;
     display: flex;
     gap: 4rem;
     padding: 1rem 0;
 
     overflow: auto;
-    &::-webkit-scrollbar{
-      width: 0;
+
+    // scrollbar css 
+    scrollbar-width: thin;
+    scrollbar-color: $green $grey;
+
+    &::-webkit-scrollbar {
+      width: 6px;
     }
+
+    &::-webkit-scrollbar-track {
+      background: $grey;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+      border-radius: 6px;
+    }
+
+    // scrollbar css end !
   }
 }

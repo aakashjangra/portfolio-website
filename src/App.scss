@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: column;
 
+  ::-moz-selection { /* Code for Firefox */
+  background: $violet;
+  }
+
+  ::selection {
+    background: $violet;
+  }
+
   .main-content{
     height: 100%;
     max-height: 100%;

@@ -1,6 +1,8 @@
 @use '../../../index.scss' as *;
 
 .project {
+  $grey: rgba($color: $white, $alpha: 0.2);
+
   min-width: 40vw;
   display: flex;
   flex-direction: column;
@@ -9,15 +11,16 @@
   border: 2px solid rgba($color: $white, $alpha: 0.2);
   border-radius: 5px;
 
-  $grey: rgba($color: $white, $alpha: 0.2);
+  overflow-x: hidden;
+  overflow-y: auto;
 
-  overflow: auto;
+  // scrollbar css 
   scrollbar-width: thin;
   scrollbar-color: $brownish $grey;
 
   &::-webkit-scrollbar {
-  width: 6px;
-}
+    width: 6px;
+  }
 
   &::-webkit-scrollbar-track {
     background: $grey;
@@ -27,12 +30,13 @@
     background-color: $grey;
     border-radius: 6px;
   }
+  // scrollbar css end !
 
   .title {
     color: $brownish;
   }
 
-  .image-and-skills{
+  .image-and-skills {
     display: flex;
     gap: 1rem;
     height: 60%;
@@ -44,15 +48,15 @@
       border-radius: 6px;
     }
 
-    .skills{
+    .skills {
       height: max-content;
       display: flex;
       justify-content: space-around;
       align-items: center;
       gap: 0.5rem;
       flex-wrap: wrap;
-      
-      .skill{
+
+      .skill {
         font-size: smaller;
         font-weight: 600;
         padding: 1rem;
