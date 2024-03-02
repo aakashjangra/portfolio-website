@@ -17,10 +17,13 @@
     .title {
       color: $green;
     }
+
+    .show-medium {
+      display: none;
+    }
   }
 
   .projects-container {
-    
     height: 100%;
     display: flex;
     gap: 4rem;
@@ -28,8 +31,11 @@
 
     overflow: auto;
 
-    // scrollbar css 
-    $grey: rgba($color: $white, $alpha: 0.2);
+    // scrollbar css
+    $grey: rgba(
+      $color: $white,
+      $alpha: 0.2,
+    );
     scrollbar-width: thin;
     scrollbar-color: $green $grey;
 
@@ -46,5 +52,40 @@
       border-radius: 6px;
     }
     // scrollbar css end !
+  }
+}
+
+//responsive
+@media screen and (width <= 870px) {
+  .projects {
+    padding: 1rem;
+    .projects-container {
+      gap: 1rem;
+    }
+  }
+}
+
+//medium screen
+@media screen and (width <= 600px) {
+  .projects {
+    height: max-content;
+
+    overflow-y: auto;
+    overflow-x: none;
+
+    .header {
+      padding: 2rem;
+      .hide-medium {
+        display: none;
+      }
+      .show-medium {
+        display: initial;
+      }
+    }
+    .projects-container {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
   }
 }

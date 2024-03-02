@@ -20,14 +20,14 @@ const Projects = () => {
       gitHubURL: 'https://github.com/aakashjangra/GymTools',
       liveURL: 'https://gymtools.vercel.app/'
     },
-    //  {
-    //   name: 'GymTools',
-    //   imgURL: '/preview-gymtools.png',
-    //   description: 'GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.',
-    //   skills: ['NextJS', 'Redux', 'firebase'],
-    //   gitHubURL: 'https://github.com/aakashjangra/GymTools',
-    //   liveURL: 'https://gymtools.vercel.app/'
-    // },
+    {
+      name: 'GymTools',
+      imgURL: '/preview-gymtools.png',
+      description: 'GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an eis an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce -commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.',
+      skills: ['NextJS', 'Redux', 'firebase'],
+      gitHubURL: 'https://github.com/aakashjangra/GymTools',
+      liveURL: 'https://gymtools.vercel.app/'
+    },
   ]
 
   return (
@@ -36,7 +36,8 @@ const Projects = () => {
         <h2 className='title'>
           {'//TOP PROJECTS'}
         </h2>
-        <p className='note'>{'Swipe for more ->'}</p>
+        <p className='note hide-medium'>{'Swipe for more 👉'}</p>
+        <p className='note show-medium'>{'Swipe down for more 👇'}</p>
       </div>
       <div className="projects-container">
         {

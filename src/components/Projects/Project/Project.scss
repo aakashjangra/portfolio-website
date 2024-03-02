@@ -1,9 +1,13 @@
 @use '../../../index.scss' as *;
 
 .project {
-  $grey: rgba($color: $white, $alpha: 0.2);
+  $grey: rgba(
+    $color: $white,
+    $alpha: 0.2,
+  );
 
   min-width: 40vw;
+  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -14,7 +18,7 @@
   overflow-x: hidden;
   overflow-y: auto;
 
-  // scrollbar css 
+  // scrollbar css
   scrollbar-width: thin;
   scrollbar-color: $brownish $grey;
 
@@ -67,7 +71,6 @@
     }
   }
 
-
   .description {
     font-size: smaller;
   }
@@ -81,5 +84,38 @@
     a {
       color: $green;
     }
+  }
+}
+
+//responsive
+@media screen and (width <= 870px) {
+  .project {
+    min-width: 50vw;
+    max-height: 60vh;
+
+    .image-and-skills {
+      height: 50%;
+
+      .skills {
+        gap: 0.5rem;
+
+        .skill {
+          font-size: 0.8rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+//medium
+@media screen and (width <= 600px) {
+  .project {
+    height: max-content;
+    width: 100%;
+    padding: 2rem;
+
+    max-height: unset;
+    overflow: unset;
   }
 }
