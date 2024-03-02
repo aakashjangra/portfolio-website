@@ -1,6 +1,6 @@
 @use '../../index.scss' as *;
 
-.contacts{
+.contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,13 +8,32 @@
 
   font-family: $cascadia;
 
-  h2{
-    font-size: 3rem;
-    color: $green;
-    text-transform: uppercase;
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    h2 {
+      font-size: 3rem;
+      color: $green;
+      text-transform: uppercase;
+    }
   }
 
-  .contact-methods{
-    width: 60%
+  .contact-methods {
+    width: 60%;
+  }
+}
+
+@media screen and (width <= 760px) {
+  .contacts {
+    .text {
+      padding: 3rem;
+    }
+    .contact-methods {
+      width: 100%;
+      padding: 3rem;
+    }
   }
 }

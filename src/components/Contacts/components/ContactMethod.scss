@@ -1,6 +1,6 @@
 @use '../../../index.scss' as *;
 
-.contact-method-container{
+.contact-method-container {
   $link-width: 7rem;
 
   width: 100%;
@@ -9,16 +9,16 @@
   border: 1px dashed $violet;
   padding: 1rem;
 
-  .name{
+  .name {
     color: $brownish;
   }
 
-  div.container{
+  div.container {
     position: relative;
     width: $link-width;
     overflow: hidden;
 
-    .default{
+    .default {
       position: absolute;
       top: 0;
       left: 0;
@@ -26,29 +26,46 @@
       transition: left 1s ease-out;
     }
 
-    .onHover{
-      
+    .onHover {
       position: absolute;
       top: 0;
       left: $link-width;
 
       transition: left 1s ease-in;
 
-      .link{
+      .link {
         padding: 1rem;
         color: $green;
       }
     }
   }
 
-  &:hover{
-    div.container{
-      .default{
-        left: $link-width; 
+  &:hover {
+    div.container {
+      .default {
+        left: $link-width;
       }
-      .onHover{
+      .onHover {
         left: 0;
       }
+    }
+  }
+}
+
+//responsive
+@media screen and (width <= 400px) {
+  .contact-method-container {
+    $link-width: 7rem;
+
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+
+    div.container {
+      height: 2rem;
+      text-wrap: nowrap;
     }
   }
 }

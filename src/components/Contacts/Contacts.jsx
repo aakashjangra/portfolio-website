@@ -5,10 +5,12 @@ import ContactMethod from './components/ContactMethod'
 const Contacts = () => {
   return (
     <div className='contacts main-content'>
-      <h2>{'//get_in_touch'}</h2>
-      <p className='pitch'>
-        If you have an idea for a website, then I'm waiting for your message.
-      </p>
+      <div className='text'>
+        <h2>{'//get_in_touch'}</h2>
+        <p className='pitch'>
+          If you have an idea for a website, then I'm waiting for your message.
+        </p>
+      </div>
       <div className="contact-methods">
         <ContactMethod name={'email'} username={'aj.akashjangra@gmail.com'} link={'mailto:aj.akashjangra@gmail.com'} />
         <ContactMethod name={'linkedin'} username={'@akashjangra1'} link={'https://www.linkedin.com/in/akashjangra1/'} />
