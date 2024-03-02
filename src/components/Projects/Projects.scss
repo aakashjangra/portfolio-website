@@ -20,8 +20,7 @@
   }
 
   .projects-container {
-    $grey: rgba($color: $white, $alpha: 0.2);
-
+    
     height: 100%;
     display: flex;
     gap: 4rem;
@@ -30,6 +29,7 @@
     overflow: auto;
 
     // scrollbar css 
+    $grey: rgba($color: $white, $alpha: 0.2);
     scrollbar-width: thin;
     scrollbar-color: $green $grey;
 
@@ -45,7 +45,6 @@
       background-color: $grey;
       border-radius: 6px;
     }
-
     // scrollbar css end !
   }
 }

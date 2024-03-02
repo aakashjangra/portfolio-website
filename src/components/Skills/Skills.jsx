@@ -60,7 +60,7 @@ const Skills = () => {
               <ul>
                 {
                   HARD_SKILLS.map(skill => 
-                    <li><FontAwesomeIcon icon={faFile} />{skill.name}</li>
+                    <li key={skill}><FontAwesomeIcon icon={faFile} />{skill.name}</li>
                   )
                 }
               </ul>

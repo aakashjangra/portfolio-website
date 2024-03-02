@@ -1,32 +1,32 @@
 @use '../../index.scss' as *;
 
-.skills-page{
+.skills-page {
   $sidebar-width: 25%;
-  
+
   display: flex;
 
-  .sidebar{
+  .sidebar {
     width: $sidebar-width;
     padding: 1rem;
     background-color: rgba($color: $white, $alpha: 0.1);
 
-    .particular-skills{
+    .particular-skills {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .heading{
+      .heading {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
         cursor: pointer;
 
-        .icon-container{
+        .icon-container {
           width: 1rem;
         }
 
-        h3{
+        h3 {
           display: flex;
           margin-top: 5px;
           gap: 3px;
@@ -34,12 +34,12 @@
           font-weight: normal;
         }
       }
-      ul{
+      ul {
         padding-left: 3rem;
         padding-top: 0.5rem;
         list-style-type: none;
 
-        li{
+        li {
           display: flex;
           gap: 3px;
           font-size: 0.8rem;
@@ -48,7 +48,7 @@
       }
     }
   }
-  .skills-container{
+  .skills-container {
     font-family: $cascadia;
 
     width: calc(100% - $sidebar-width);
@@ -57,5 +57,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 3rem;
+  }
+}
+
+//responsive
+@media screen and (width <= 480px) {
+  .skills-page {
+    $sidebar-width: 40%;
+
+    .sidebar {
+      width: $sidebar-width;
+    }
+    .skills-container {
+      width: calc(100% - $sidebar-width);
+      grid-template-columns: max-content;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

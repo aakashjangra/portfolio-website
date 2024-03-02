@@ -19,5 +19,42 @@
     overflow-y: auto;
     overflow-x: hidden;
     background-color: $dark;
+
+       // scrollbar css 
+    $grey: rgba($color: $white, $alpha: 0.2);
+    scrollbar-width: thin;
+    scrollbar-color: $pink $grey;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $grey;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey;
+      border-radius: 6px;
+    }
+    // scrollbar css end !
+  }
+}
+
+@media screen and (width <= 1000px) {
+  :root{
+    font-size: 12px;
+  }
+}
+
+@media screen and (width <= 760px) {
+  :root{
+    font-size: 10px;
+  }
+}
+
+@media screen and (width <= 400px) {
+  :root{
+    font-size: 8px;
   }
 }

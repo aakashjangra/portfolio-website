@@ -1,0 +1,66 @@
+@use '../index.scss' as *;
+
+ul.numberline.indices {
+  list-style-type: none;
+
+  li {
+    color: rgba($color: $white, $alpha: 0.5);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    height: 20px;
+    background-color: rgba($color: $white, $alpha: 0.5);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+// responsiveness
+@media screen and (width > 1000px) {
+  .v-small-screen,
+  .small-screen,
+  .medium-screen {
+    display: none;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .large-screen,
+  .small-screen,
+  .v-small-screen {
+    display: none;
+  }
+}
+
+@media screen and (width <= 760px) {
+  .medium-screen {
+    display: initial;
+  }
+}
+
+@media screen and (width <= 400px) {
+  .small-screen {
+    display: initial;
+  }
+  .medium-screen,
+  .large-screen {
+    display: none;
+  }
+}
+
+@media screen and (width <= 300px) {
+  .v-small-screen {
+    display: initial;
+  }
+  .small-screen {
+    display: none;
+  }
+}

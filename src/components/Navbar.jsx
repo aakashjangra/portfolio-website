@@ -13,16 +13,16 @@ const Navbar = () => {
   }, [])
 
   return (
-    <ul className='navbar'>
-      <li
-        className={`${currentPage === '/' ? 'active' : ''}`}
-        onClick={() => {
-          setCurrentPage('/');
-          navigate('/');
-        }}
-      >
-        _hello
-      </li>
+    <ul className='navbar'>      
+    <li
+      className={`${currentPage === '/' ? 'active' : ''}`}
+      onClick={() => {
+        setCurrentPage('/');
+        navigate('/');
+      }}
+    >
+      _hello
+    </li>
       <li
         className={`${currentPage === '/about' ? 'active' : ''}`}
         onClick={() => {

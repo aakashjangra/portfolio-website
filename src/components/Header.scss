@@ -5,33 +5,55 @@
   display: flex;
   flex-direction: column;
 
-  .top-ribbon{
+  .top-ribbon {
     display: flex;
     height: 50%;
     gap: 10px;
     align-items: center;
     padding-left: 2%;
 
-    .pink, .brownish, .green{
+    .pink,
+    .brownish,
+    .green {
       height: 12px;
       width: 12px;
       border-radius: 50%;
     }
-    .pink{
+    .pink {
       background-color: $pink;
     }
-    .brownish{
+    .brownish {
       background-color: $brownish;
     }
-    .green{
+    .green {
       background-color: $green;
     }
   }
-  h1.name{
+  h1.name {
     display: inline-block;
     font-family: $cascadia;
     font-size: small;
     font-weight: normal;
     opacity: 0.7;
+  }
+}
+
+// responsiveness
+@media screen and (width <= 400px) {
+  .header {
+    .top-ribbon {
+      gap: 0.3rem;
+
+      .pink,
+      .brownish,
+      .green {
+        height: 0.8rem;
+        width: 0.8rem;
+      }
+    }
+    h1.name {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+    }
   }
 }

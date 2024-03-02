@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.scss'
-import { EnvelopeSimple, LinkedinLogo } from '@phosphor-icons/react'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -11,10 +10,16 @@ const Footer = () => {
       <h2>_get_in_touch</h2>
       <div className='contact-methods'>
         <div className='contact-method'>
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <a href="https://www.linkedin.com/in/akashjangra1" target='_blank'>
+
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
         </div>
         <div className='contact-method'>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <a href="mailto:aj.akashjangra@gmail.com" target='_blank'>
+
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 @use '../index.scss' as *;
 
-.navbar{
+.navbar {
   $border-size: 2px;
 
   height: 50%;
@@ -8,28 +8,48 @@
   list-style-type: none;
   border: $border-size solid $dark;
 
-  li{
+  li {
     height: 100%;
-    width: 9rem;
+    width: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     font-size: small;
     padding: $border-size 0;
-    
+
     border-right: $border-size solid $dark;
 
-    &:hover{
+    &:hover {
       color: $brownish;
       cursor: pointer;
     }
 
-    &.active{
+    &.active {
       color: $brownish;
       background-color: $dark;
       padding-top: 0;
       border-top: $border-size solid $pink;
     }
+  }
+}
+
+@media screen and (width <= 1000px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (width <= 760px) {
+  .navbar {
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (width <= 400px) {
+  :root {
+    font-size: 8px;
   }
 }
