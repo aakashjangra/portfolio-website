@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './NumberLine.scss'
 
-const NumberLine = ({ start, end, lineHeight }) => {
+const NumberLine = ({ cName, start, end, lineHeight }) => {
 
   if (start > end) return null;
 
@@ -18,14 +18,17 @@ const NumberLine = ({ start, end, lineHeight }) => {
 
 
   return (
-    <ul className='numberline indices'>
+    <ul className={`${cName} numberline indices`}>
       {
         nums.map(num => 
-          <li key={num} style={
+          <li key={num}
+          
+           style={
             {
               lineHeight: lineHeight? lineHeight: 'initial'
             }
-          } >{num}</li>
+          }
+           >{num}</li>
         )
       }
     </ul>

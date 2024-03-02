@@ -5,8 +5,12 @@ import NumberLine from './NumberLine'
 const About = () => {
   return (
     <section className='about main-content'>
+      <img src="/akash_pp.png" alt="akash's image" />
       <div className='container'>
-        <NumberLine start={41} end={56} lineHeight={1.8} />
+        <NumberLine cName="large-screen" start={41} end={56} lineHeight={1.8} />
+        <NumberLine cName="medium-screen" start={41} end={60} lineHeight={1.6} />
+        <NumberLine cName="small-screen" start={41} end={62} lineHeight={1.6} />
+        <NumberLine cName="v-small-screen" start={41} end={70} lineHeight={1.6} />
         <div className='inner-container'>
           <h3 className='heading'>
             <div className='pink-dot'></div>
@@ -28,7 +32,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <img src="/akash_pp.png" alt="akash's image" />
+
     </section>
   )
 }

@@ -1,12 +1,12 @@
 @use '../index.scss' as *;
 
-.footer{
+.footer {
   height: 7%;
   display: flex;
   align-items: center;
   border: 2px solid $dark;
 
-  h2{
+  h2 {
     height: 100%;
     display: flex;
     align-items: center;
@@ -15,13 +15,13 @@
     border-right: 2px solid $dark;
   }
 
-  .contact-methods{
-    height: 100%; 
+  .contact-methods {
+    height: 100%;
     display: flex;
     align-items: center;
     font-size: small;
-    
-    .contact-method{
+
+    .contact-method {
       height: 100%;
       display: flex;
       align-items: center;
@@ -31,9 +31,31 @@
 
       cursor: pointer;
 
-      &:hover{
+      a {
+        color: white;
+      }
+
+      :hover {
         color: $brownish;
       }
     }
-  }  
+  }
+}
+
+// responsiveness
+@media screen and (width <= 760px) {
+  .footer {
+    height: 10%;
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .contact-methods {
+      .contact-method {
+        padding: 0 2rem;
+        font-size: medium;
+      }
+    }
+  }
 }

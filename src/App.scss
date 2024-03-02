@@ -40,3 +40,21 @@
     // scrollbar css end !
   }
 }
+
+@media screen and (width <= 1000px) {
+  :root{
+    font-size: 12px;
+  }
+}
+
+@media screen and (width <= 760px) {
+  :root{
+    font-size: 10px;
+  }
+}
+
+@media screen and (width <= 400px) {
+  :root{
+    font-size: 8px;
+  }
+}
