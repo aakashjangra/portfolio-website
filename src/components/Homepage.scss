@@ -2,7 +2,7 @@
 
 .homepage {
   display: grid;
-  grid-template: "intro-1 intro-2";
+  grid-template: 'intro-1 intro-2';
 
   user-select: none;
   $padding-more: 2rem;
@@ -94,6 +94,7 @@
 
     .typewriter-effect {
       height: 10%;
+      width: 30rem;
       font-size: 3rem;
       font-weight: bold;
       color: $violet;
@@ -184,6 +185,7 @@
 
       .typewriter-effect {
         height: 10%;
+        width: unset;
         font-size: 2rem;
         min-width: max-content;
       }
