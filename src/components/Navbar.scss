@@ -15,10 +15,22 @@
     justify-content: center;
     align-items: center;
 
+    font-family: $cascadia;
+
     font-size: small;
     padding: $border-size 0;
 
     border-right: $border-size solid $dark;
+
+    &.projects {
+      color: $dark;
+      background-color: $brownish;
+
+      &:hover {
+        color: $white;
+        background-color: $green;
+      }
+    }
 
     &:hover {
       color: $brownish;

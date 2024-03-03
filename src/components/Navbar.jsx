@@ -41,7 +41,7 @@ const Navbar = () => {
             _skills
           </li>
           <li
-            className={`${currentPage === '/projects' ? 'active' : ''}`}
+            className={`${currentPage === '/projects' ? 'active' : ''} projects`}
             onClick={() => {
               setCurrentPage('/projects'); navigate('/projects')
             }}
