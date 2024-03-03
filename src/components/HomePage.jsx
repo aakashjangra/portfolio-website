@@ -46,6 +46,16 @@ const HomePage = () => {
 
   return (
     <div className='homepage main-content'>
+      <section className='intro-2'>
+        <h1 className='name'>
+          <span>{'<Akash'}</span>
+          <span>{'Jangra>'}</span>
+        </h1>
+        <p className='help'>{'//I help you'}</p>
+        <div className='typewriter-effect'>
+          {displayText} <span className="blinker">|</span>
+        </div>
+      </section>
       <section className='intro-1'>
         <NumberLine start={1} end={20} lineHeight={1.5} cName={'hide-mobile'} />
         <NumberLine start={1} end={10} lineHeight={1.5} cName={'hide-desktop'} />
@@ -74,16 +84,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className='intro-2'>
-        <h1 className='name'>
-          <span>{'<Akash'}</span>
-          <span>{'Jangra>'}</span>
-        </h1>
-        <p className='help'>{'//I help you'}</p>
-        <div className='typewriter-effect'>
-          {displayText} <span className="blinker">|</span>
-        </div>
-      </section>
+      
     </div>
   )
 }
