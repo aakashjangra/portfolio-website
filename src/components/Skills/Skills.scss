@@ -58,18 +58,50 @@
     gap: 1rem;
     padding: 3rem;
   }
+  .note-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .note {
+      font-size: 1.5rem;
+      color: $brownish;
+    }
+  }
 }
 
 //responsive
 @media screen and (width <= 480px) {
   .skills-page {
-    $sidebar-width: 40%;
+    flex-direction: column;
 
     .sidebar {
-      width: $sidebar-width;
+      width: 100%;
+
+      .particular-skills {
+
+        .heading {
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+        ul {
+          padding: 2rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+          justify-content: space-between;
+
+          li {
+            width: max-content;
+          }
+        }
+      }
     }
     .skills-container {
-      width: calc(100% - $sidebar-width);
+      width: 100%;
       grid-template-columns: max-content;
       justify-content: center;
       align-items: center;
