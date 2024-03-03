@@ -1,27 +1,31 @@
 @use './index.scss' as *;
 
-.app{
+.app {
   height: 100vh;
   display: flex;
   flex-direction: column;
 
-  ::-moz-selection { /* Code for Firefox */
-  background: $violet;
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: $violet;
   }
 
   ::selection {
     background: $violet;
   }
 
-  .main-content{
+  .main-content {
     height: 100%;
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: $dark;
 
-       // scrollbar css 
-    $grey: rgba($color: $white, $alpha: 0.2);
+    // scrollbar css
+    $grey: rgba(
+      $color: $white,
+      $alpha: 0.2,
+    );
     scrollbar-width: thin;
     scrollbar-color: $pink $grey;
 
@@ -42,19 +46,19 @@
 }
 
 @media screen and (width <= 1000px) {
-  :root{
+  :root {
     font-size: 12px;
   }
 }
 
 @media screen and (width <= 760px) {
-  :root{
+  :root {
     font-size: 10px;
   }
 }
 
 @media screen and (width <= 400px) {
-  :root{
-    font-size: 8px;
+  :root {
+    font-size: 9px;
   }
 }
