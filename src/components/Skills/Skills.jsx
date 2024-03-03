@@ -11,7 +11,7 @@ const Skills = () => {
   const HARD_SKILLS = [
     {
       name: 'ReactJS', 
-      level: 5
+      level: 7
     },
     {
       name: 'Redux',
@@ -19,15 +19,15 @@ const Skills = () => {
     },
     {
       name: 'Tailwind CSS',
-      level: 7
+      level: 9
     },
     {
       name: 'NodeJS',
-      level: 5
+      level: 7
     },
     {
       name: 'MongoDB',
-      level: 5
+      level: 6
     },
     {
       name: 'MySQL',
