@@ -2,12 +2,13 @@
 
 .homepage {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template: "intro-1 intro-2";
 
   user-select: none;
   $padding-more: 2rem;
 
   .intro-1 {
+    grid-area: intro-1;
     .hide-desktop {
       display: none;
     }
@@ -71,6 +72,7 @@
   }
 
   .intro-2 {
+    grid-area: intro-2;
     font-family: $cascadia;
     text-transform: uppercase;
 
@@ -122,9 +124,8 @@
 @media screen and (width <= 760px) {
   .homepage {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    // justify-content: space-around;
     padding: 2rem;
     $padding-more: 0;
 
