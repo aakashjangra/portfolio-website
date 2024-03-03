@@ -47,7 +47,8 @@ const HomePage = () => {
   return (
     <div className='homepage main-content'>
       <section className='intro-1'>
-        <NumberLine start={1} end={20} lineHeight={1.5} />
+        <NumberLine start={1} end={20} lineHeight={1.5} cName={'hide-mobile'} />
+        <NumberLine start={1} end={10} lineHeight={1.5} cName={'hide-desktop'} />
 
         <div className='description'>
           <div>

@@ -37,3 +37,17 @@
     }
   }
 }
+
+@media screen and (width <= 400px) {
+  .contacts {
+    height: 100%;
+    .text {
+      padding: 2rem;
+      padding-top: 10rem;
+    }
+    .contact-methods {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+}

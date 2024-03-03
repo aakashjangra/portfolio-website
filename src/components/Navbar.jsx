@@ -13,47 +13,53 @@ const Navbar = () => {
   }, [])
 
   return (
-    <ul className='navbar'>      
-    <li
-      className={`${currentPage === '/' ? 'active' : ''}`}
-      onClick={() => {
-        setCurrentPage('/');
-        navigate('/');
-      }}
-    >
-      _hello
-    </li>
-      <li
-        className={`${currentPage === '/about' ? 'active' : ''}`}
-        onClick={() => {
-          setCurrentPage('/about');
-          navigate('/about')
-        }}>_about_me</li>
-      <li
-        className={`${currentPage === '/skills' ? 'active' : ''}`}
-        onClick={() => {
-          setCurrentPage('/skills'); navigate('/skills')
-        }}
-      >
-        _skills
-      </li>
-      <li
-        className={`${currentPage === '/projects' ? 'active' : ''}`}
-        onClick={() => {
-          setCurrentPage('/projects'); navigate('/projects')
-        }}
-      >
-        _projects
-      </li>
-      <li
-        className={`${currentPage === '/contacts' ? 'active' : ''}`}
-        onClick={() => {
-          setCurrentPage('/contacts'); navigate('/contacts')
-        }}
-      >
-        _contacts
-      </li>
-    </ul>
+    <>
+      {/* <div className="navbar-mobile"></div>
+      <div className="navbar-desktop"> */}
+        <ul className='navbar'>
+          <li
+            className={`${currentPage === '/' ? 'active' : ''}`}
+            onClick={() => {
+              setCurrentPage('/');
+              navigate('/');
+            }}
+          >
+            _hello
+          </li>
+          <li
+            className={`${currentPage === '/about' ? 'active' : ''}`}
+            onClick={() => {
+              setCurrentPage('/about');
+              navigate('/about')
+            }}>_about_me</li>
+          <li
+            className={`${currentPage === '/skills' ? 'active' : ''}`}
+            onClick={() => {
+              setCurrentPage('/skills'); navigate('/skills')
+            }}
+          >
+            _skills
+          </li>
+          <li
+            className={`${currentPage === '/projects' ? 'active' : ''}`}
+            onClick={() => {
+              setCurrentPage('/projects'); navigate('/projects')
+            }}
+          >
+            _projects
+          </li>
+          <li
+            className={`${currentPage === '/contacts' ? 'active' : ''}`}
+            onClick={() => {
+              setCurrentPage('/contacts'); navigate('/contacts')
+            }}
+          >
+            _contacts
+          </li>
+        </ul>
+      {/* </div> */}
+
+    </>
   )
 }
 

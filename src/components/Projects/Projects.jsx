@@ -21,10 +21,10 @@ const Projects = () => {
       liveURL: 'https://gymtools.vercel.app/'
     },
     {
-      name: 'GymTools',
+      name: 'GymTools (extended)',
       imgURL: '/preview-gymtools.png',
       description: 'GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an eis an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce -commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.GymTools is an e-commerce website.',
-      skills: ['NextJS', 'Redux', 'firebase'],
+      skills: ['NextJS', 'Redux', 'firebase', 'NextJS', 'Redux', 'firebase'],
       gitHubURL: 'https://github.com/aakashjangra/GymTools',
       liveURL: 'https://gymtools.vercel.app/'
     },
