@@ -10,7 +10,7 @@ const Skills = () => {
 
   const HARD_SKILLS = [
     {
-      name: 'ReactJS', 
+      name: 'ReactJS',
       level: 7
     },
     {
@@ -39,18 +39,18 @@ const Skills = () => {
     <div className='skills-page main-content'>
       <div className='sidebar'>
         <div className='particular-skills hard-skills'>
-          <div className='heading hard-skills-heading' onClick={() => {setShowHardSkills(!showHardSkills)}} >
+          <div className='heading hard-skills-heading' onClick={() => { setShowHardSkills(!showHardSkills) }} >
             <div className='icon-container'>
 
-            {
-              showHardSkills ? (
+              {
+                showHardSkills ? (
                   <FontAwesomeIcon icon={faChevronDown} />
                 ) : (
                   <FontAwesomeIcon icon={faChevronRight} />
-                  )
-                }
+                )
+              }
             </div>
-            
+
             <h3>
               <FontAwesomeIcon icon={faFile} />
               hard_skills</h3>
@@ -59,7 +59,7 @@ const Skills = () => {
             showHardSkills && (
               <ul>
                 {
-                  HARD_SKILLS.map(skill => 
+                  HARD_SKILLS.map(skill =>
                     <li key={skill}><FontAwesomeIcon icon={faFile} />{skill.name}</li>
                   )
                 }
@@ -69,15 +69,27 @@ const Skills = () => {
 
         </div>
       </div>
-      <div className='skills-container'>
-        {
-          showHardSkills && (
-            HARD_SKILLS.map(skill => 
-              <Skill skill={skill.name} outOfTen={skill.level} />
-            )
-          )
-        }
-      </div>
+      {
+        showHardSkills && (
+          <div className='skills-container'>
+              {
+                showHardSkills && (
+                  HARD_SKILLS.map(skill =>
+                    <Skill skill={skill.name} outOfTen={skill.level} />
+                  )
+                )
+              }
+          </div>
+        )
+      }
+
+      {
+        !showHardSkills && (
+          <div className="note-container">
+            <p className='note'>Select a category of skills to view</p>
+          </div>
+        )
+      }
     </div>
   )
 }
