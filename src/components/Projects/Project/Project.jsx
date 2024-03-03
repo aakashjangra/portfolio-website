@@ -12,8 +12,8 @@ const Project = ({ projectName, imgURL, description, gitHubURL, liveURL, skills 
         <img className='preview-image' src={imgURL} alt="project preview image" />
         <div className="skills">
           {
-            skills.map(skill => 
-              <div className='skill'>{skill}</div>
+            skills.map(skill =>
+              <div key={skill} className='skill'>{skill}</div>
             )
           }
         </div>
